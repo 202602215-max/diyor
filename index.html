@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Tetris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header><div><p class="eyebrow">3-1 PROJECT</p><h1>⚡ DARK TETRIS</h1></div><button id="restart">Restart</button></header>
+    <section class="game-wrap"><div class="board-panel"><canvas id="board" width="300" height="600"></canvas><div id="gameOver" class="overlay hidden"><h2>GAME OVER</h2><button id="playAgain">Play Again</button></div></div>
+    <aside><div class="card"><span>Score</span><strong id="score">0</strong></div><div class="card"><span>Lines</span><strong id="lines">0</strong></div><div class="card"><span>Level</span><strong id="level">1</strong></div><div class="card next"><span>Next</span><canvas id="next" width="120" height="120"></canvas></div><div class="controls"><b>Controls</b><p>← → Move</p><p>↓ Soft drop</p><p>↑ Rotate</p><p>Space Hard drop</p></div></aside></section>
+    <div class="mobile-controls"><button data-action="left">←</button><button data-action="rotate">↻</button><button data-action="down">↓</button><button data-action="drop">DROP</button><button data-action="right">→</button></div>
+  </main><script src="script.js"></script>
+</body></html>
